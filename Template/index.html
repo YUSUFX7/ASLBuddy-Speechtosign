@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Language</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Speech to sign language</h1>
+    </header>
+    <main class="px-3 py-3">
+      <div id="alert-placeholder">
+      </div>
+
+      <button type="button" class="btn btn-info" id="start-recording">Start Recording</button>
+      <button type="button" class="btn btn-info" id="stop-recording">Stop Recording</button>
+    </main>
+    <div id="output">
+
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>
